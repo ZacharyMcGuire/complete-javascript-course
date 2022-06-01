@@ -54,11 +54,19 @@ console.log('123' < 57); // false
 console.log(5 + 6 + '4' + 9 - 4 - 2); // 1143
 
 // LECTURE 22: Equality Operators
-const numNeighbours = Number(prompt("How many neighbour countries does your country have?"));
+// const numNeighbours = Number(prompt("How many neighbour countries does your country have?"));
+const numNeighbours = 0;
 if (numNeighbours === 1) {
     console.log("One 1 border!");
 } else if (numNeighbours > 1) {
     console.log("More than 1 border");
 } else {
     console.log("No borders");
+}
+
+// LECTURE 24: Logical operators
+if (language === "English" && population < 50000000 && !isIsland) {
+    console.log("Sarah should live here!");
+} else {
+    console.log("Sarah should not live here...");
 }
