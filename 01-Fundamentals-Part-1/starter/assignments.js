@@ -38,3 +38,10 @@ console.log(description);
 // LECTURE 17: String and Template Literals
 description = `${country} has a population of ${population / 1000000} million people, who primarily speak ${language}`;
 console.log(description);
+
+// LECTURE 18: Taking Decisions: If/Else Statements
+if (population > averagePopulation) {
+    console.log(`${country}'s population is above average`)
+} else {
+    console.log(`${country}'s population is ${(averagePopulation - population) / 1000000} million below average`)
+}
