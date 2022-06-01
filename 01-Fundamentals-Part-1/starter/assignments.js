@@ -91,3 +91,6 @@ switch (language.toLowerCase()) {
     default:
         console.log("Great language too! :D");
 }
+
+// LECTURE 28: Ternary operator
+console.log(`${country}'s population is ${population > averagePopulation ? "above" : "below"} average`)
