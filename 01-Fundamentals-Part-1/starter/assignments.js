@@ -32,5 +32,9 @@ console.log(population > finlandPopulation);
 const averagePopulation = 33000000;
 console.log(population < averagePopulation);
 
-const description = country + " has a population of " + population / 1000000 + " million people, who primarily speak " + language;
+let description = country + " has a population of " + population / 1000000 + " million people, who primarily speak " + language;
+console.log(description);
+
+// LECTURE 17: String and Template Literals
+description = `${country} has a population of ${population / 1000000} million people, who primarily speak ${language}`;
 console.log(description);
