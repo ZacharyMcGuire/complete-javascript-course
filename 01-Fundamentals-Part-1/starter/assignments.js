@@ -46,9 +46,19 @@ if (population > averagePopulation) {
     console.log(`${country}'s population is ${(averagePopulation - population) / 1000000} million below average`)
 }
 
-// LECURE 20: Type conversion and coercion
+// LECTURE 20: Type conversion and coercion
 console.log('9' - '5'); // 4
 console.log('19' - '13' + '17'); // 617
 console.log('19' - '13' + 17); // 23
 console.log('123' < 57); // false
 console.log(5 + 6 + '4' + 9 - 4 - 2); // 1143
+
+// LECTURE 22: Equality Operators
+const numNeighbours = Number(prompt("How many neighbour countries does your country have?"));
+if (numNeighbours === 1) {
+    console.log("One 1 border!");
+} else if (numNeighbours > 1) {
+    console.log("More than 1 border");
+} else {
+    console.log("No borders");
+}
