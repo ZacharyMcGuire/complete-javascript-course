@@ -84,3 +84,17 @@ const percentages = [
     percentageOfWorld1(627)
 ]
 console.log(percentages);
+
+// LECTURE: Basic array operations
+const neighbours = ['Australia', 'China', 'New Zealand', 'France', 'Sweden'];
+console.log(neighbours);
+neighbours.push('Utopia');
+console.log(neighbours);
+neighbours.pop();
+console.log(neighbours);
+
+if (!neighbours.includes("Germany")) console.log("Probably not a central European country");
+
+const i = neighbours.indexOf("Sweden");
+neighbours[1] = "Republic of Sweden";
+console.log(neighbours);
