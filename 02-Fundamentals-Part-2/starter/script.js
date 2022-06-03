@@ -32,3 +32,18 @@ australiaPopulationPercentage = percentageOfWorld2(24);
 newZealandPopulationPercentage = percentageOfWorld2(14);
 console.log(chinaPopulationPercentage, australiaPopulationPercentage, newZealandPopulationPercentage);
 
+// LECTURE: Arrow Functions
+const percentageOfWorld3 = population => (population / 7900) * 100;
+console.log(percentageOfWorld3(1441));
+
+// LECTURE: Functions calling other functions
+const describePopulation = function (country, population) {
+    const percentage = percentageOfWorld1(population);
+    return `${country} has ${population} million people, which is about ${percentage}% of the world population.`;
+}
+
+console.log(
+    describePopulation('Australia', 24),
+    describePopulation('China', 1441),
+    describePopulation('New Zealand', 14)
+)
