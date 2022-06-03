@@ -121,3 +121,13 @@ const total = [
     bills[2] + tips[2]
 ]
 console.log(total);
+
+// LECTURE: Objects
+const myCountry = {
+    country: 'Australia',
+    capital: 'Canberra',
+    language: 'English',
+    population: 24,
+    neighbours: ['China', 'New Zealand', 'France', 'Sweden']
+}
+console.log(myCountry);
