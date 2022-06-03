@@ -72,3 +72,15 @@ dolphinsAverageScore = calcAverage(85, 54, 41);
 koalasAverageScore = calcAverage(23, 34, 27);
 
 checkWinner(dolphinsAverageScore, koalasAverageScore);
+
+// LECTURE: Arrays
+const populations = [24, 1441, 14, 627]
+console.log(populations.length === 4);
+
+const percentages = [
+    percentageOfWorld1(24),
+    percentageOfWorld1(1441),
+    percentageOfWorld1(14),
+    percentageOfWorld1(627)
+]
+console.log(percentages);
