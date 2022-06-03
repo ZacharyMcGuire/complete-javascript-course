@@ -47,3 +47,28 @@ console.log(
     describePopulation('China', 1441),
     describePopulation('New Zealand', 14)
 )
+
+// Coding Challenge #1
+const calcAverage = (num1, num2, num3) => (num1 + num2 + num3) / 3;
+
+const checkWinner = (dolphinsAverageScore, koalasAverageScore) => {
+    const scoreString = `${dolphinsAverageScore} vs ${koalasAverageScore}`;
+    if (dolphinsAverageScore >= 2 * koalasAverageScore) {
+        console.log(`Dolphins win! 🏆 (${scoreString})`);
+    } else if (koalasAverageScore >= 2 * dolphinsAverageScore) {
+        console.log(`Koalas win! 🏆 (${scoreString})`);
+    } else {
+        console.log(`No one wins! 😭 (${scoreString})`);
+    }
+    return;
+}
+
+let dolphinsAverageScore = calcAverage(44, 23, 71);
+let koalasAverageScore = calcAverage(65, 54, 49);
+
+checkWinner(dolphinsAverageScore, koalasAverageScore);
+
+dolphinsAverageScore = calcAverage(85, 54, 41);
+koalasAverageScore = calcAverage(23, 34, 27);
+
+checkWinner(dolphinsAverageScore, koalasAverageScore);
