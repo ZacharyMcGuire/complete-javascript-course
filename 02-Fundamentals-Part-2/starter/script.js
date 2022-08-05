@@ -165,3 +165,33 @@ const jonas = {
 };
 
 console.log(jonas.getSummary())
+
+// Coding Challenge #3
+const mark = {
+    fullName: 'Mark Miller',
+    mass: 78,
+    height: 1.69,
+    calcBMI: function() {
+        console.log(this.mass, this.height)
+        this.BMI = this.mass / (this.height ** 2)
+        return this.BMI
+    }
+}
+
+
+const john = {
+    fullName: 'John Smith',
+    mass: 92,
+    height: 1.95,
+    calcBMI: function() {
+        console.log(this.mass, this.height)
+        this.BMI = this.mass / (this.height ** 2)
+        return this.BMI
+    }
+}
+
+console.log(
+    `${john.fullName}'s BMI (${john.calcBMI()}) is ${
+        john.BMI > mark.calcBMI() ? 'higher' : 'not higher'
+    } than ${mark.fullName}'s (${mark.BMI})!`
+)
