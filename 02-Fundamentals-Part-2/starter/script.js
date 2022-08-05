@@ -3,7 +3,7 @@
 // LECTURE: Functions
 
 function describeCountry (country, population, capitalCity) {
-    const msg = `${country} has ${population} million people and its capitcal city is ${capitalCity}.`;
+    const msg = `${country} has ${population} million people and its capital city is ${capitalCity}.`;
     return msg;
 }
 
@@ -142,3 +142,26 @@ console.log(myCountry);
 
 myCountry['population'] -= 2;
 console.log(myCountry);
+
+// CHALLENGE
+// "Jonas is a 46-year-old teacher, and he has a driver's license"
+
+const jonas = {
+    firstName: 'Jonas',
+    lastName: 'Schmedtmann',
+    birthYear: '1991',
+    job: 'teacher',
+    friends: ['Michael', 'Peter', 'Steven'],
+    hasDriversLicense: true,
+
+    calcAge: function() {
+        this.age = 2037 - this.birthYear;
+        return this.age;
+    },
+
+    getSummary: function () {
+        return `${jonas.firstName} is a ${jonas.calcAge()}-year-old ${jonas.job}, and he has ${this.hasDriversLicense ? 'a' : 'no'} driver's license"`
+    }
+};
+
+console.log(jonas.getSummary())
