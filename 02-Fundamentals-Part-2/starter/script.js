@@ -101,14 +101,13 @@ console.log(neighbours);
 
 // Coding Challenge #2
 const calcTip = function (bill) {
-    const tip = bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.20;
-    return tip;
+    return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.20;
 }
 
 console.log(calcTip(100));
 
-const bills = [125, 555, 44];
-const tips = [
+let bills = [125, 555, 44];
+let tips = [
     calcTip(bills[0]),
     calcTip(bills[1]),
     calcTip(bills[2])
@@ -195,3 +194,34 @@ console.log(
         john.BMI > mark.calcBMI() ? 'higher' : 'not higher'
     } than ${mark.fullName}'s (${mark.BMI})!`
 )
+
+// Coding Challenge #4
+
+// arrays already defined above.
+bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52]
+tips = []
+let totals = []
+
+for (let i = 0; i < bills.length; i++) {
+    let b = bills[i]
+    let t = calcTip(b)
+    tips.push(t)
+    totals.push(b + t)
+}
+
+console.log(
+    `Bills: ${bills}\n`,
+    `Tips: ${tips}\n`,
+    `Totals: ${totals}\n`
+)
+
+let calcAverageOfArray = function(arr) {
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+        sum += arr[i]
+    }
+
+    return sum / arr.length
+}
+
+console.log(`Average of totals: ${calcAverageOfArray(totals)}`)
